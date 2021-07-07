@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(53, 51, 51);
+}
+
+.nav-logo p{
+    font-size: 31px;
+    font-weight: 600;
+    color: white;
+}
+
+.menu ul{
+    display: flex;
+ 
+    
+}
+
+.menu ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: -1px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.menu ul li a:hover::before{
+    width: 100%;
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 0px 15px;
+    padding: 16px 28px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.btn-login{
+   padding: 10px 20px;
+    background: transparent;
+    border: 1px solid gray;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+.login a{
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+    margin-right: 1vw;
+}
+
+.login a:hover{
+    color: black;
+    border: 1px solid yellow;
+}
+
+.login a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    background-color: rgb(230, 230, 95);
+    top: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.login a:hover::before{
+    /* left: 100%; */
+    width: 100%;
+}
+
+
+/* login section style */
+.login-page{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.username{
+    margin-bottom: 1vw;
+}
+
+.username input{
+    outline: none;
+    font-size: 17px;
+    padding: 3px 55px 8px 11px;
+}
+
+.password{
+    margin-bottom: 1vw;
+}
+
+.password input{
+    outline: none;
+    font-size: 17px;
+    padding: 3px 55px 8px 11px;
+}
+
+.login-page h2{
+    margin-bottom: 2vw;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.home{
+    margin-top: 2vw;
+}
+
+.logg{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.logg a{
+    text-decoration: none;
+    border: 1px solid grey;
+    color: grey;
+    display: inline-block;
+    padding: 10px;
+}
+
+.logg a:hover{
+    background-color: orange;
+    color: #fff;
+}
+.cpassword input{
+    outline: none;
+    font-size: 17px;
+    padding: 3px 55px 8px 11px;
+}
+
+.signform{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signform h2{
+    margin-bottom: 2vw;
+}
+
+.signn{
+    padding: 10px 20px;
+    margin-top: 1vw;
+    background: transparent;
+    border: 1px solid gray;
+    font-size: 18px;
+    color: gray;
+    font-weight: 500;
+    
+}
+
+
+
+
